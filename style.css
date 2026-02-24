@@ -1,0 +1,132 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+body{
+background:black;
+color:white;
+overflow-x:hidden;
+}
+
+.flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.navigation{
+background:black;
+padding:15px 30px;
+}
+
+.logo img{
+width:140px;
+}
+
+.menu li{
+color: white;
+list-style:none;
+margin-right:30px;
+cursor:pointer;
+transition: 0.3s ease;
+}
+
+.menu li:hover{
+    color: #e50914;
+    transform: scale(1.1);
+}
+
+.banner{
+padding:120px 40px;
+}
+
+.banner h1{
+font-size:60px;
+}
+
+.btn{
+padding:12px 18px;
+margin-top:20px;
+border:none;
+background:white;
+cursor:pointer;
+}
+
+.banner .btn:hover{
+    background-color: red;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.btn1{
+background:rgba(255,255,255,0.3);
+color:white;
+}
+
+/* VIDEO BACKGROUND */
+
+.video-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+z-index:-1;
+}
+
+.video-container video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.color-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:black;
+opacity:0.5;
+}
+
+/* CAROUSEL */
+
+.carousel{
+padding:40px;
+}
+
+.carousel-slider{
+overflow-x:auto;
+overflow-y:hidden;
+scroll-behavior:smooth;
+}
+
+.carousel-slider::-webkit-scrollbar{
+display:none;
+}
+
+.carousel-list{
+display:flex;
+gap:15px;
+width:max-content;
+}
+
+.carousel-item{
+flex:0 0 auto;
+}
+
+.carousel-item img{
+width:240px;
+height:150px;
+border-radius:6px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.carousel-item img:hover{
+transform:scale(1.1);
+}
